@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnalysisAlamofireImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Xc-0r-Ioq">
+                                <rect key="frame" x="96" y="35" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Nv9-ee-SJe"/>
+                                    <constraint firstAttribute="width" secondItem="7Xc-0r-Ioq" secondAttribute="height" id="xPX-RJ-GF7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yzi-eA-j3u">
+                                <rect key="frame" x="96" y="183" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6zC-hF-etA"/>
+                                    <constraint firstAttribute="width" secondItem="Yzi-eA-j3u" secondAttribute="height" id="Pw0-Nz-wt7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B43-nE-2Un">
+                                <rect key="frame" x="20" y="20" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Gl3-Jz-jFB"/>
+                                    <constraint firstAttribute="width" constant="46" id="cGu-gV-Tbj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showTowImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LWT-Ap-N8N"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d6d-cd-flA">
+                                <rect key="frame" x="96" y="324" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0tj-4M-s2s"/>
+                                    <constraint firstAttribute="width" secondItem="d6d-cd-flA" secondAttribute="height" id="mW9-Uv-UgW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Xc-0r-Ioq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="7Fg-da-LF9"/>
+                            <constraint firstItem="Yzi-eA-j3u" firstAttribute="width" secondItem="Yzi-eA-j3u" secondAttribute="height" id="AiZ-AW-DJm"/>
+                            <constraint firstItem="d6d-cd-flA" firstAttribute="centerX" secondItem="Yzi-eA-j3u" secondAttribute="centerX" id="MhE-03-c8z"/>
+                            <constraint firstItem="d6d-cd-flA" firstAttribute="top" secondItem="Yzi-eA-j3u" secondAttribute="bottom" constant="13" id="NYZ-Z2-Fs6"/>
+                            <constraint firstItem="Yzi-eA-j3u" firstAttribute="top" secondItem="7Xc-0r-Ioq" secondAttribute="bottom" constant="20" id="WkJ-ZE-iOj"/>
+                            <constraint firstItem="B43-nE-2Un" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="dtw-qo-RTz"/>
+                            <constraint firstItem="d6d-cd-flA" firstAttribute="width" secondItem="d6d-cd-flA" secondAttribute="height" id="hGT-FF-txW"/>
+                            <constraint firstItem="Yzi-eA-j3u" firstAttribute="centerX" secondItem="7Xc-0r-Ioq" secondAttribute="centerX" id="nxl-eh-DZQ"/>
+                            <constraint firstItem="7Xc-0r-Ioq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oco-D4-DNT"/>
+                            <constraint firstItem="d6d-cd-flA" firstAttribute="width" secondItem="d6d-cd-flA" secondAttribute="height" id="rkJ-JX-Lal"/>
+                            <constraint firstItem="B43-nE-2Un" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="sf7-HL-EHg"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imgOne" destination="7Xc-0r-Ioq" id="lUq-dr-EBW"/>
+                        <outlet property="imgThree" destination="d6d-cd-flA" id="KN2-C5-xeH"/>
+                        <outlet property="imgTwo" destination="Yzi-eA-j3u" id="dRW-aO-ILn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
