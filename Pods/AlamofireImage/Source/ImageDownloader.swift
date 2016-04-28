@@ -66,6 +66,7 @@ public class ImageDownloader {
     // MARK: - Properties
 
     /// The image cache used to store all downloaded images in.
+    /// 内存缓存
     public let imageCache: ImageRequestCache?
 
     /// The credential used for authenticating each download request.
@@ -95,6 +96,7 @@ public class ImageDownloader {
         Creates a default `NSURLSessionConfiguration` with common usage parameter values.
     
         - returns: The default `NSURLSessionConfiguration` instance.
+     // 磁盘缓存，请求的数据
     */
     public class func defaultURLSessionConfiguration() -> NSURLSessionConfiguration {
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
@@ -297,7 +299,8 @@ public class ImageDownloader {
             }
 
             request.validate()
-            ///  创建request
+            ///  在Request的NSOperationQueue，添加操作
+            ///  当请求结束
             request.response(
                 queue: self.responseQueue,
                 responseSerializer: Request.imageResponseSerializer(),

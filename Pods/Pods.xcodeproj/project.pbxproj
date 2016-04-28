@@ -170,10 +170,10 @@
 			children = (
 				E654E9A6BB194C3B5A2ECFBE4C24276E /* Image.swift */,
 				1201963C9F659933897B64162FEF3CC7 /* ImageCache.swift */,
-				9E4F64914388641A78BF284CB092FC2F /* ImageDownloader.swift */,
 				13834DD447A9BFB2FA4EEEF836569330 /* ImageFilter.swift */,
 				27A44001603A1F41327C049088380093 /* Request+AlamofireImage.swift */,
 				810706987915B8D744362D20B38E4C5A /* UIImage+AlamofireImage.swift */,
+				9E4F64914388641A78BF284CB092FC2F /* ImageDownloader.swift */,
 				054D4A60B8ECA861991680CB4F11632A /* UIImageView+AlamofireImage.swift */,
 				0D749B14473EC115DC9F8B02142833A3 /* Support Files */,
 			);
