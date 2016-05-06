@@ -31,6 +31,8 @@ class ViewController: UIViewController {
             { (request, response, result) -> Void in
         }
         
+        
+//        dispatch_async(<#T##queue: dispatch_queue_t##dispatch_queue_t#>, <#T##block: dispatch_block_t##dispatch_block_t##() -> Void#>)
     }
 
     @IBAction func showTowImage(sender: AnyObject) {
